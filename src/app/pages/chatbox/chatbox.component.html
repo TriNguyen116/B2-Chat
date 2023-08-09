@@ -4,7 +4,8 @@
     <div class="navbar-left">
       <div class="s-nav">
         <img src="https://i.pinimg.com/236x/fb/6d/94/fb6d94727029fc6708dc998f106ee7cc.jpg" alt="">
-        <button class="btn-login">Login</button>
+        <button *ngIf="this.authService.user==null" class="btn-login" (click)="clickLogin()">Login</button>
+        <button *ngIf="this.authService.user!=null" class="btn-login" (click)="clickLogout()">Logout</button>
       </div>
     </div>
     <div class="search">
@@ -61,7 +62,12 @@
         <fa-icon [icon]="faBars" class="icon-bar"></fa-icon>
       </div>
     </div>
-    <div class="chatbox"></div>
+    <div class="chatbox">
+      <div class="message left">Tin nhắn bên trái</div>
+      <div class="message right">Tin nhắn bên phải</div>
+      <div class="message left">Tin nhắn khác bên trái</div>
+      <div class="message right">Tin nhắn khác bên phải</div>
+    </div>
     <div class="send-message">
       <div class="s-send">
         <fa-icon [icon]="faFaceLaughBeam" class="icon-face"></fa-icon>

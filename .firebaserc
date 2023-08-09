@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chatbox-f3ead": {
+      "hosting": {
+        "chatbox": [
+          "chatbox-f3ead"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chatbox-f3ead"
+  }
+}

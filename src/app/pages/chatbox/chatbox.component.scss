@@ -165,8 +165,30 @@
 .chatbox{
   width: 100%;
   height: 80%;
-  // background-color: #E5E7E9;
+  // border: 1px solid #ccc;
+   overflow: auto;
 }
+
+.message {
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.left {
+  background-color: #f1f0f0;
+  float: left;
+  clear: both;
+}
+
+.right {
+  background-color: #0084ff;
+  color: white;
+  float: right;
+  clear: both;
+}
+
 
 .send-message {
   width: 100%;
@@ -185,6 +207,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 
 .m-input {
   width: 70%;
